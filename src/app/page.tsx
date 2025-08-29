@@ -1,9 +1,12 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Ticket, CheckCircle2, Loader2 } from 'lucide-react';
 import { getAllTickets } from './actions';
+import { unstable_noStore as noStore } from 'next/cache';
+
+export const dynamic = 'force-dynamic';
 
 async function getTicketStats() {
+  noStore();
   try {
     const sheetData = await getAllTickets();
     if (!sheetData.values || sheetData.values.length <= 1) {
