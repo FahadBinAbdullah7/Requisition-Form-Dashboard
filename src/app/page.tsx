@@ -69,7 +69,7 @@ export default async function Home() {
       <div className="mt-8">
         <Card>
             <CardHeader>
-                <CardTitle>Welcome to SheetFlow!</CardTitle>
+                <CardTitle>Welcome to Content Operation's Requisition Form Dashboard!</CardTitle>
             </CardHeader>
             <CardContent>
                 <p className="text-muted-foreground">
